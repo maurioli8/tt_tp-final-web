@@ -1,0 +1,28 @@
+{
+  "reseñas": [
+    {
+      "autor": "Juan Pérez",
+      "texto": "El mouse es muy cómodo y la batería dura mucho. ¡Recomendado!"
+    },
+    {
+      "autor": "María Gómez",
+      "texto": "El teclado tiene una excelente respuesta y es muy bonito."
+    },
+    {
+      "autor": "Carlos Ruiz",
+      "texto": "Los auriculares tienen buen sonido y son fáciles de conectar."
+    },
+    {
+      "autor": "Lucía Fernández",
+      "texto": "La campera de algodón es súper abrigada y el color no se desgasta con los lavados."
+    },
+    {
+      "autor": "Santiago López",
+      "texto": "La remera slim fit es cómoda y se adapta muy bien al cuerpo. Ideal para el verano."
+    },
+    {
+      "autor": "Valentina Torres",
+      "texto": "El pantalón de jean tiene un calce perfecto y la tela es resistente. Muy conforme con la compra."
+    }
+  ]
+}

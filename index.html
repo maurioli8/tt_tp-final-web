@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talento Tech - Productos Electrónicos, Indumentaria, Bazar y Reseñas | TP Final Web</title>
+  <meta name="description" content="Compra productos varios, lee reseñas y contacta al desarrollador. Proyecto final web con carrito y búsqueda." />
+  <meta name="keywords" content="tecnología, electrónica, productos, reseñas, carrito, talento tech, tienda online, bazar, indumentaria" />
+  <meta name="author" content="Mauricio Daniel Olivera" />
+  <link rel="stylesheet" href="assets\css\styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/multimedia/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <header>
+  <h1>Talento Tech - Web TP Final</h1>
+  <div class="carrito-header">
+    <button id="carrito-btn" aria-label="Abrir carrito de compras">
+      🛒 <span id="carrito-contador">0</span>
+    </button>
+  </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#reseñas">Reseñas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="productos">
+      <h2>Productos</h2>
+      <input 
+        type="text" 
+        id="busqueda-productos" 
+        placeholder="Buscar productos..."
+      >
+      <div class="productos-container">
+        <!-- Cards de productos -->
+      </div>
+    </section>
+
+  <!-- Modal del carrito -->
+  <div id="carrito-modal" class="carrito-modal" role="dialog" aria-modal="true" aria-labelledby="carrito-titulo">
+    <div class="carrito-modal-content">
+      <span class="carrito-cerrar" tabindex="0" aria-label="Cerrar carrito">&times;</span>
+      <h2 id="carrito-titulo">Carrito</h2>
+      <div class="carrito-lista"></div>
+      <button id="vaciar-carrito" class="vaciar-carrito">Vaciar carrito</button>
+      <div id="carrito-total"></div>
+    </div>
+  </div>
+
+    <section id="reseñas">
+      <h2>Reseñas</h2>
+      <div class="reseñas-grid">
+        <!-- Grid de reseñas -->
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="https://formspree.io/f/meozgjoe" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" name="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Talento Tech - Front End</p>
+  </footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
